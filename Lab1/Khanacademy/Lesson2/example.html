@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Basics</title>
+        <meta charset="utf-8">
+        <style>
+            /*Let's add css style rule
+            Style rule has selector which tells a browser what part of page
+            to style and declarations, which tell the browser how to style their part*/
+            /*ul, p, body --> selecting by tag name only
+            #everywhere, love --> selecting by id
+            */
+            ul {
+                color: rgb(220, 181, 229)
+            }
+            p {
+                color: rgb(6, 253, 18)
+            }
+            h1 {
+                color:aqua
+            }
+            body {
+                background-color: rgb(238, 210, 224) ;
+            }
+            /*below applying selecting by id:*/
+            #everywhere {
+                color:rgb(6, 253, 18);
+                background-color: rgb(205, 183, 140);
+            }
+            #love-list-item {
+                color:pink;
+                background-color: rgb(18, 206, 143);
+            }
+            #second-paragraph {
+                color:rgb(206, 18, 112)
+            }
+            #list-item {
+                color:rgb(228, 162, 163);
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Why math is beautiful?</h1>
+        <p>Because:</p>
+        <ul>
+            <li>Its math</li>
+            <li id="list-item">beautiful</li>
+            <li id="everywhere">everywhere</li>
+            <li>helps us</li>
+            <li id="love-list-item"><strong>love</strong></li>
+            <li id="list-item">magic</li>
+        </ul>
+        <p id="second-paragraph">Math lover</p>
+    </body>
+</html>
