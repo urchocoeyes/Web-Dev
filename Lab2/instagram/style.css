@@ -1,0 +1,147 @@
+body {
+    background-color: #fafafa;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  :root {
+    --base-unit: 4px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 85%;
+    margin-top: 30px;
+  }
+  .main_left {
+    height: 700px;
+    width: 430px;
+    background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    margin-right: 40px;
+    margin-top: 50px;
+  }
+  .main_left_phone {
+    position: relative;
+    top: 28px;
+    left: 155px;
+    width: 250px;
+    height: 539px;
+  }
+  .main_right {
+    margin-top: -35px;
+  }
+  .main_right_form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin: 25px;
+    padding: 25px;
+    width: 350px;
+    height: 398px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+  }
+  .main_right_form_logo {
+    padding: 20px 60px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #main_right_form_login,
+  #main_right_form_password {
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+  }
+  #main_right_form_login:active,
+  #main_right_form_login:focus,
+  #main_right_form_password:active,
+  #main_right_form_password:focus {
+    border: 1px solid grey;
+  }
+  .main_right_form_btn {
+    background-color: #0095f6;
+    opacity: 0.6;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+  .main_right_form_divider {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .main_right_form_btn_fcb {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .main_right_form_btn_fcb_logo {
+    height: 16px;
+    width: 16px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    transform: scale(1.4);
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+  }
+  .main_right_form_link {
+    text-align: center;
+    padding: 20px;
+  }
+  .main_right_bottom {
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    width: 350px;
+    text-align: center;
+  }
+  .main_right_apps {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer {
+    height: 15%;
+  }
+  .footer_top,
+  .footer_bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+  }
+  .footer_top_link {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 8px;
+  }

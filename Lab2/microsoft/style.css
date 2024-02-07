@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+  }
+  .header {
+    height: 54px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  .h_left,
+  .header_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .h_left_item {
+    padding: 16px 6px 16px 10px;
+    height: 100%;
+    margin-top: 1px;
+    width: 137px;
+    outline-offset: -2px;
+  }
+  .h_left_item_logo {
+    overflow-x: visible;
+    margin-top: -3px;
+    max-width: none;
+    width: 108px;
+    display: block;
+    max-width: 100%;
+    height: 23px;
+  }
+  .h_left_link {
+    display: flex;
+    text-decoration: none;
+    overflow-x: visible;
+    border: 1px solid transparent;
+    color: #262626;
+    position: relative;
+    font-size: 13px !important;
+    margin-top: 1px;
+    padding: 16px 8px 10px;
+    height: 30px;
+    outline-offset: -2px;
+  }
+  .h_left_link:hover,
+  .header_right_products:hover,
+  .header_right_search:hover,
+  .header_right_login:hover {
+    text-decoration: underline;
+  }
+  .header_right_products,
+  .header_right_search,
+  .header_right_login {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 13px !important;
+    color: #262626;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    margin-top: 1px;
+    padding: 10px 9px 10px 5px;
+    height: 100%;
+  }
+  .header_right_search_text {
+    cursor: pointer;
+  }
+  .header_right_login_icon {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    background-image: url("./images/icon.svg");
+  }
+  .main_page {
+    background-color: #b0c1cf;
+    width: 100% !important;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./images/background.avif");
+  }
+  .main_page_element {
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 48px;
+    width: 20%;
+  }
+  .main_page_element_heading {
+    font-size: 2.3125rem;
+    font-size: 37px;
+    margin-bottom: 1.25rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000 !important;
+    word-wrap: break-word;
+  }
+  .main_page_element_description {
+    margin-bottom: 1.5rem !important;
+    width: 470px;
+  }
+  .main_page_element_group {
+    display: flex;
+    box-sizing: border-box; 
+  }
+  .main_page_element_group_link {
+    margin-right: 1.5rem;
+    color: #fff !important;
+    font-weight: 600;
+    border: 0.125rem solid transparent;
+    position: relative;
+    border-radius: 0.125rem;
+    background-color: inherit;
+    padding: 0.625rem 0.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    display: block;
+    background-color: #0067b8;
+  }
+  .main_page_element_group_link_1 {
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 2%;
+    color: inherit;
+    font-size: 1rem;
+  }
+  .main_elements {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .main_elements_item {
+    width: 23%;
+    padding: 13px;
+  }
+  .main_elements_item-img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+  }
+  .main_elements_item-heading {
+    font-size: 1.8125rem;
+    margin: 1.5rem 0;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .main_elements_item-link {
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #0067b8;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .main_page_element_group_link_1:hover,
+  .main_elements_item-link:hover {
+    text-decoration: underline;
+  }
