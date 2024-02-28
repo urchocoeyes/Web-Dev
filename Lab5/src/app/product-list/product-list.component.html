@@ -1,0 +1,39 @@
+<div class="main">
+  <h2>Products</h2>
+  
+  <div *ngFor="let category of categories">
+  <div *ngIf="category.show_products">
+  <div *ngFor="let product of category.products">
+  <div *ngIf="product.show">
+    <h3>
+      <a [title]="product.name + ' details'" [href]="product.link">
+        {{ product.name }}
+      </a>
+    </h3>
+  
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <p *ngIf="product.rating">Rating: {{ product.rating }}</p>
+    <p *ngIf="product.price">Price: {{ product.price }}</p>
+    <div class="image-container">
+    <div *ngFor="let image of product.img; let i = index">
+      <img [src]="image" [alt]="product.name" /> <br>
+    </div>
+    </div>
+  
+    <button type="button" (click)="share(product.name, product.link)">
+      Share with Telegram
+    </button>
+  
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
+  
+    <app-like></app-like>
+    <button type="button" (click) = "product.show=false">
+      Remove item
+    </button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
