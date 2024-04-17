@@ -34,7 +34,7 @@ def company_vacancies(request, id):
 def list_of_vacancies(request):
     if request.method == 'GET':
         vacancies = Vacancy.objects.all()
-        data = [{'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company_id} for vacancy in vacancies]
+        data = [{'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company} for vacancy in vacancies]
         return JsonResponse(data, safe=False)
 
 # Get one Vacancy detail
@@ -44,11 +44,11 @@ def vacancy_detail(request, id):
     except Vacancy.DoesNotExist:
         return JsonResponse({'ERROR': 'Vacancy not found'}, status=404)
 
-    data = {'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company_id}
+    data = {'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company.id}
     return JsonResponse(data)
 
 # List of top 10 vacancies sorted by decreasing salary
 def top_ten_vacancies(request):
     vacancies = Vacancy.objects.order_by('-salary')[:10]
-    data = [{'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company_id} for vacancy in vacancies]
+    data = [{'id': vacancy.id, 'name': vacancy.name, 'description': vacancy.description, 'salary': vacancy.salary, 'company': vacancy.company.id} for vacancy in vacancies]
     return JsonResponse(data, safe=False)
